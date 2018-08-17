@@ -17,17 +17,17 @@ bool cmp(Virus a, Virus b) {
 }
 
 void MD5Scanner::ReadDataBase(string path) {
+	cout << "-------------------- MD5 -----------------" << endl;
 	FILE *f = fopen(path.c_str(), "r");
 
 	int n;
+	char _str[80];
 	fscanf(f, "%d", &n);
 	foru(i, 1, n) {
 		string str;
-		char _str[100];
+		
 		fscanf(f, "%s\n", &_str);
 		str = _str;
-		if (i % 5000 == 0) cout << i << endl;
-
 		Virus virus;
 		vector<string> listStr = Helper::Split(str, ':');
 		if (listStr.size() != 2) continue;
@@ -36,6 +36,7 @@ void MD5Scanner::ReadDataBase(string path) {
 		viruss.push_back(virus);
 	}
 
+	cout << "Read database done " << endl;
 	cout << "--- Begin sort ---" << endl;
 	sort(viruss.begin(), viruss.end(), cmp);
 	cout << "--- Sort done ---" << endl;
@@ -43,6 +44,7 @@ void MD5Scanner::ReadDataBase(string path) {
 }
 
 vector<string>MD5Scanner::Scan(string path) {
+	cout << "start scann " << endl;
 	vector<string> ans;
 
 	// if list virus empty quit
@@ -50,7 +52,8 @@ vector<string>MD5Scanner::Scan(string path) {
 
 	MD5 md5;
 	string str = md5.getMD5(path);
-	cout << "--- Hash done ---" << endl;	
+	cout << str << endl;
+	cout << "--- Hash done ---" << endl;
 
 	int low = 0, high = viruss.size() - 1;
 	while (high >= low) {

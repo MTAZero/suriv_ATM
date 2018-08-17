@@ -33,6 +33,12 @@
     <ClCompile Include="MD5Scanner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sha1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA1Scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -45,6 +51,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="md5.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="sha1.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
@@ -68,6 +77,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MD5Scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA1Scanner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

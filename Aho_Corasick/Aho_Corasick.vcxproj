@@ -147,6 +147,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MD5.cpp" />
     <ClCompile Include="MD5Scanner.cpp" />
+    <ClCompile Include="sha1.cpp" />
+    <ClCompile Include="SHA1Scanner.cpp" />
     <ClCompile Include="Virus.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +156,7 @@
     <Text Include="input.txt" />
     <Text Include="md5.txt" />
     <Text Include="output.txt" />
+    <Text Include="sha1.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BXT.h" />
@@ -162,6 +165,8 @@
     <ClInclude Include="Helper.h" />
     <ClInclude Include="MD5.h" />
     <ClInclude Include="MD5Scanner.h" />
+    <ClInclude Include="sha1.hpp" />
+    <ClInclude Include="SHA1Scanner.h" />
     <ClInclude Include="Virus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

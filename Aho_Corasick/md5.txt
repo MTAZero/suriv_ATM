@@ -1,4 +1,5 @@
 59104
+BXT.Virus:385027f690157e23b27e962252989d8f
 Win.Test.EICAR_HDB-1:44d88612fea8a8f36de82e1278abb02f
 Win.Spyware.Bispy-7:c27e671b012030efdacfce86e9795e96
 Win.Trojan.Dialer-275:e18f37b104cc8b40ceade1de3e568f25
